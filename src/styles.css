@@ -377,7 +377,7 @@
     }
   }
 
-  :is(#sign-in-page, #sign-up-page) {
+  :is(#sign-in, #sign-up) {
     @apply mx-auto flex justify-center;
   }
 
