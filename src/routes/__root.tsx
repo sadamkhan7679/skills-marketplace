@@ -75,7 +75,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 				<HeadContent />
 			</head>
 			<body className="font-sans antialiased wrap-anywhere">
-				<PostHogProvider
+				{/* <PostHogProvider
 					apiKey={import.meta.env.VITE_PUBLIC_POSTHOG_PROJECT_TOKEN}
 					options={{
 						api_host: "/ingest",
@@ -86,7 +86,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 						capture_exceptions: true,
 						debug: import.meta.env.DEV,
 					}}
-				>
+				> */}
 					<ClerkProvider>
 						<PostHogUserIdentifier />
 						<div id="root-layout">
@@ -116,7 +116,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 							]}
 						/>
 					</ClerkProvider>
-				</PostHogProvider>
+				{/* </PostHogProvider> */}
 				<Scripts />
 			</body>
 		</html>
